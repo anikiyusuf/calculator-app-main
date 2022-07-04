@@ -1,0 +1,27 @@
+*{
+    font-family:  'Spartan', sans-serif;
+}
+body{
+    background-color: hsl(224, 26%, 31%);
+    min-height: 100vh;
+}
+.calculator{
+     border-radius: 1em;
+     height: 380px;
+      width: 400px;
+     margin: auto;
+     margin-top: 6rem;
+    
+}
+.display-box {
+    background-color:hsl(224, 35%, 15%);
+    border:none;
+    color: black;
+    border-radius: 5px;
+    width: 110%;
+    height: 100%;
+    
+   }
+   
+   
+    

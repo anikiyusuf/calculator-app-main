@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&family=Fraunces:ital,wght@1,900&family=Montserrat:wght@600&family=Outfit:wght@600&family=Overpass:wght@600&family=Oxygen+Mono&family=Public+Sans:wght@700&family=Red+Hat+Display:wght@900&family=Red+Hat+Text:wght@600&family=Roboto+Mono&family=Rubik:wght@500&family=Space+Mono:wght@700&family=Spartan:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ 
+
+ <table class="calculator">
+  <tr>
+    <td colspan = "3"> <input class = "display-box" type = "text" id = "result" disabled /> </td>
+    </tr>
+
+
+      <!-- display() function display the value of clicked button -->
+<!-----first row---->
+
+  <tr>
+     <td> <input class = "button" type = "button" value = "7" onclick = "display('7')" /> </td>
+      <td> <input class = "button" type = "button" value = "8" onclick = "display('8')" /> </td>
+      <td> <input class = "button" type = "button" value = "9" onclick = "display('9')" /> </td>
+      <td> <input class = "button" type = "button" value = "Del" onclick = "deleteNumber()"   style = "background-color:hsl(224, 21%, 50%); color:white"/> </td>
+
+      </tr>
+
+
+     <!--------second row ----->
+      <tr>
+        <td> <input class = "button" type = "button" value = "4" onclick = "display('4')" /> </td>
+        <td> <input class = "button" type = "button" value = "5" onclick = "display('5')" /> </td>
+        <td> <input class = "button" type = "button" value = "6" onclick = "display('6')" /> </td>
+        <td> <input class = "button" type = "button" value = "+" onclick = "display('+')" /> </td>
+        </tr>
+
+        <!------third row row---->
+        <tr>
+          <td> <input class = "button" type = "button" value = "1" onclick = "display('1')" /> </td>
+          <td> <input class = "button" type = "button" value = "2" onclick = "display('2')" /> </td>
+          <td> <input class = "button" type = "button" value = "3" onclick = "display('3')" /> </td>
+          <td> <input class = "button" type = "button" value = "-" onclick = "display('-')" /> </td>
+          </tr>
+          <!-------fourth row----->
+          <tr>
+            <td> <input class = "button" type = "button" value = "." onclick = "display('.')" /> </td>
+            <td> <input class = "button" type = "button" value = "0" onclick = "display('0')" /> </td>
+            <td> <input class = "button" type = "button" value = "/" onclick = "display('/')" /> </td>
+            <td> <input class = "button" type = "button" value = "x" onclick = "display('x')" /> </td>
+            </tr>
+
+           <!----fifth row ----->
+         <!---- <tr>
+             <td> <input class = "button" type = "button" value = "Reset" onclick = "clearScreen()" style = "background-color:hsl(224, 21%, 50%);color:white"  /> </td>
+            <td> <input class = "button" type = "button" value = "=" onclick = "display('=')" /> </td>
+             </tr>-->
+
+ </table>
+  
+ <!----- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>--->
+  <script src="main.js"></script>
+</body>
+</html>
